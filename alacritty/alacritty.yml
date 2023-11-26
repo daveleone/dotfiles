@@ -1,0 +1,71 @@
+env:
+  TERM: xterm-256color
+
+window:
+  dimensions:
+    columns: 127
+    lines: 38
+  dynimca_title: true
+  title: Terminal
+  decorations: full
+  # opacity: 0.85
+  padding:
+    x: 0
+    y: 0
+
+font:
+  normal:
+    family: RobotoMono Nerd Font Mono
+    style: Regular
+  size: 15
+
+live_config_reload: true
+
+# cursor |
+# cursor:
+#   style:
+#     shape: Beam
+#     blinking: On
+#   blink_interval: 500
+
+# black and green colors
+# colors:
+#   primary:
+#     background: "#000000"
+#     foreground: "#00ff00"
+
+# gruvbox theme
+schemes:
+  gruvbox_material_hard_dark: &gruvbox_material_hard_dark
+    primary:
+      yellow: "#d8a657"
+      blue: "#7daea3"
+      magenta: "#d3869b"
+      cyan: "#89b482"
+      white: "#d4be98"
+
+  gruvbox_material_soft_dark: &gruvbox_material_soft_dark
+    primary:
+      background: "#32302f"
+      foreground: "#d4be98"
+    normal:
+      black: "#45403d"
+      red: "#ea6962"
+      green: "#a9b665"
+      yellow: "#d8a657"
+      blue: "#7daea3"
+      magenta: "#d3869b"
+      cyan: "#89b482"
+      white: "#d4be98"
+    bright:
+      black: "#45403d"
+      red: "#ea6962"
+      green: "#a9b665"
+      yellow: "#d8a657"
+      blue: "#7daea3"
+      magenta: "#d3869b"
+      cyan: "#89b482"
+      white: "#d4be98"
+
+# choose a color scheme by referencing the defined scheme
+colors: *gruvbox_material_soft_dark
