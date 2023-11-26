@@ -45,8 +45,10 @@ keymap.set("v", "j", "k", opts)
 keymap.set("v", "k", "j", opts)
 
 -- Move line
--- keymap.set("n", "<Alt-j>", ":m .+1<CR>==", { silent = true })
--- keymap.set("n", "<Alt-k>", ":m .-2<CR>==", { silent = true })
+keymap.set("n", "<C-Up>", ":m .-2<CR>==", opts)
+keymap.set("n", "<C-Down>", ":m .+1<CR>==", opts)
+keymap.set("v", "<C-Up>", ":m '<-2<CR>gv=gv", opts)
+keymap.set("v", "<C-Down>", ":m '>+1<CR>gv=gv", opts)
 
 -- ToggleTerm
 keymap.set("n", "tt", ":ToggleTerm<Return>")
