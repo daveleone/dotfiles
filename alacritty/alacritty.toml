@@ -1,0 +1,9 @@
+import = [ "/home/dave/.config/alacritty/keybindings.toml", ]
+
+[font]
+normal = { family = "BerkeleyMono Nerd Font", style = "Regular" }
+size = 12
+
+[window]
+padding = { x = 0, y = 0 }
+dimensions = { columns = 140, lines = 40 }
